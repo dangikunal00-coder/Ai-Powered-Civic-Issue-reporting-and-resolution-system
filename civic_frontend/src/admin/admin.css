@@ -1,0 +1,279 @@
+/* =========================
+   ADMIN DASHBOARD LAYOUT
+========================= */
+
+.admin-container {
+  padding: 32px 40px;
+  background: #f5f7fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.admin-container h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.admin-container .muted {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   DEPARTMENT GRID
+========================= */
+
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* =========================
+   DEPARTMENT CARD
+========================= */
+
+.dept-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dept-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dept-card h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.stats strong {
+  font-size: 22px;
+  display: block;
+}
+
+.stats p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Status colors */
+.stats .pending strong {
+  color: #f0ad4e;
+}
+
+.stats .in_progress strong {
+  color: #ff9800;
+}
+
+.stats .solved strong {
+  color: #28a745;
+}
+
+/* =========================
+   VIEW BUTTON
+========================= */
+
+.dept-card button {
+  width: 100%;
+  padding: 8px 0;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dept-card button:hover {
+  background: #0056b3;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  width: 92%;
+  max-width: 1200px;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-header h2 {
+  font-size: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* =========================
+   COMPLAINT TABLE
+========================= */
+
+.complaint-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.complaint-table th,
+.complaint-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+.complaint-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  text-align: left;
+}
+
+.complaint-table tr:hover {
+  background: #f9fafb;
+}
+.table-container {
+  max-height: 500px;   /* adjust if needed */
+  overflow-y: auto;
+  border-radius: 10px;
+}
+table thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+table {
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+table th {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+table td {
+  font-size: 14px;
+}
+table td, table th {
+  padding: 12px 10px;
+}
+table tbody tr:hover {
+  background-color: #f5f7fa;
+  transition: 0.2s;
+}
+/* =========================
+   ROW STATUS COLORS
+========================= */
+
+.row-pending {
+  background-color: #fffdf7;
+}
+
+.row-in-progress {
+  background-color: #fff3cd;
+}
+
+.row-solved {
+  background-color: #e6f4ea;
+}
+
+/* =========================
+   STATUS BUTTONS
+========================= */
+
+.status-btn {
+  padding: 6px 10px;
+  margin: 2px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.status-btn:hover:not(:disabled) {
+  background: #f1f1f1;
+}
+
+.status-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+
+.complaint-table img {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .complaint-table th,
+  .complaint-table td {
+    font-size: 12px;
+  }
+}

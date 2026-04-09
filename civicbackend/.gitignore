@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env ❌ VERY IMPORTANT
+env/
+venv/
+
+# Media
+media/
+
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

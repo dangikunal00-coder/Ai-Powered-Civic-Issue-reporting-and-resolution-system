@@ -1,0 +1,501 @@
+/*
+  Base styles for mobile screens (up to 767px)
+*/
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 70px; /* Space for the fixed footer */
+}
+.duplicate-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+}
+
+
+/* Project Title Bar */
+.project-title-bar {
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  color: #007bff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-title-bar h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* New Dashboard Content */
+.dashboard-content-new {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Dashboard Banner */
+.dashboard-banner {
+  background-color: #007bff;
+  color: white;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.dashboard-banner img {
+  width: 100%;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.grid-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  row-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px black;
+  width: 90px;
+}
+.grid-button span {
+  font-size: 0.7rem;
+}
+/* Complaint Menu Screen */
+.complaint-menu {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.complaint-menu-header {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+}
+
+.complaint-menu-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.back-arrow-new {
+  position: absolute;
+  left: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.item-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.item-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Camera and Form views */
+.camera-view,
+.captured-image-container,
+.complaint-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.camera-view video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.camera-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+
+.camera-button:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  background-color: #dc3545;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
+
+.captured-image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.complaint-form h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.complaint-form select,
+.complaint-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.complaint-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Footer Styling */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: color 0.2s;
+}
+
+.footer-item:hover {
+  color: #007bff;
+}
+
+.footer-item i {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.footer-add-btn {
+  width: 50px;
+  height: 50px;
+  /* background-color: black; */
+  /* color: black; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+.footer-add-btn svg {
+  border-radius: 50%;
+  color: black;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  font-size: 4rem;
+}
+.userIcon {
+  font-size: 1.5rem !important;
+}
+/* styles for the profile dropdown */
+.profile-dropdown-container {
+  position: relative;
+}
+
+.profile-dropdown-menu {
+  position: absolute;
+  bottom: 60px; /* Position above the footer */
+  right: 150px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  z-index: 1001; /* Ensure it's above other elements */
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f2f5;
+}
+/* Add these new styles to your Dashboard.css file */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex-grow: 1;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+.camera-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .dashboard-container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .banner-info h3 {
+    font-size: 2.5rem;
+  }
+
+  .banner-info p {
+    font-size: 1.2rem;
+  }
+
+  .weather-info {
+    font-size: 1.5rem;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+
+  .grid-button {
+    flex-direction: row;
+    column-gap: 15px;
+    min-width: 200px;
+  }
+  .grid-button svg {
+    width: 30px !important;
+  }
+  .grid-button span {
+    font-size: 1rem;
+  }
+}
+.duplicate-box {
+  border: 1px solid #facc15;
+  background: #fffbea;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.duplicate-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.duplicate-desc {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.vote-button {
+  background: #22c55e;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vote-button:hover {
+  background: #16a34a;
+}
+.complaint-main-heading{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.duplicate-complaint-box h2{
+  font-size:20px;
+  font-weight:600;
+}
+
+.duplicate-complaint-box h4{
+  font-size:16px;
+  margin-top:8px;
+}
+
+.duplicate-complaint-box h5{
+  font-size:14px;
+  color:#d9534f;
+}
+.complaint-card{
+border:1px solid #ddd;
+border-radius:10px;
+padding:20px;
+margin-bottom:25px;
+background:white;
+}
+
+.duplicate-card{
+border:1px solid #ddd;
+border-radius:10px;
+padding:20px;
+margin-top:20px;
+background:#fff8dc;
+}
+
+.duplicate-content{
+display:flex;
+align-items:flex-start;
+gap:20px;
+}
+
+/* SMALL IMAGE SECTION */
+.duplicate-image{
+flex:1;
+max-width:150px;
+}
+
+.duplicate-image img{
+width:120px;
+height:90px;
+object-fit:cover;
+border-radius:6px;
+}
+
+/* LARGE DESCRIPTION SECTION */
+.duplicate-info{
+flex:3;
+}
+
+.duplicate-info p{
+margin:6px 0;
+}
+
+.duplicate-buttons{
+margin-top:10px;
+display:flex;
+gap:10px;
+}
+
+.confirm-btn{
+background:#007bff;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.cancel-btn{
+background:#dc3545;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:5px;
+cursor:pointer;
+}

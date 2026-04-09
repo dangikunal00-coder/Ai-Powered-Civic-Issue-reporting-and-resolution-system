@@ -1,0 +1,89 @@
+/* Full page background */
+.admin-login-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(120deg, #e0e7ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login card */
+.admin-login-box {
+  width: 420px;
+  padding: 32px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Heading */
+.admin-login-box h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+/* Labels */
+.admin-login-box label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* Inputs & dropdown – NORMAL SIZE */
+.admin-login-box input,
+.admin-login-box select {
+  width: 100%;
+  height: 38px;                 /* ⭐ NORMAL INPUT HEIGHT */
+  padding: 6px 10px;            /* ⭐ FIXED PADDING */
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1.5px solid #c7d2fe;
+  font-size: 14px;
+  background: #eef2ff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Focus effect */
+.admin-login-box input:focus,
+.admin-login-box select:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Login button */
+.admin-login-box button {
+  width: 100%;
+  height: 44px;
+  margin-top: 10px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+}
+
+/* Button hover */
+.admin-login-box button:hover {
+  background: linear-gradient(90deg, #1e40af, #1e3a8a);
+}
+
+/* Error message */
+.error-text {
+  color: #dc2626;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}

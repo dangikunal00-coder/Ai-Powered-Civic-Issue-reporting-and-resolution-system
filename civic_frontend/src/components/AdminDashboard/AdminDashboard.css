@@ -1,0 +1,47 @@
+.admin-dashboard {
+  padding: 20px;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.complaints-table th,
+.complaints-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.complaint-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Pending {
+  background: gray;
+}
+
+.In_Progress {
+  background: orange;
+}
+
+.Solved {
+  background: green;
+}
+
+button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+}

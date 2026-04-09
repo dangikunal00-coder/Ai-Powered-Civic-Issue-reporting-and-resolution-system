@@ -1,0 +1,152 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.profile-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.profile-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.edit-button,
+.save-button,
+.cancel-button {
+  padding: 8px 15px;
+  background-color: #f0f2f5;
+  color: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+  background-color: #e0e2e5;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.profile-info form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.edit-profile-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-profile-btn:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-message {
+  color: #c62828;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
